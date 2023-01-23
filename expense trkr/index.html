@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>  
+    <hr>
+    <h1 >Expense Tracker</h1>
+    <hr>
+
+    <form onsubmit="saveToLocalStorage(event)" class="form">
+    
+        <label for="text">Choose Expense Amount</label>
+        <input type="number" name="amount" id="amount" required>
+        <br>
+        <label for="text">Choose Discription</label>
+        <input type="text" name="discription" id="discription" required>
+        <br>
+        <label for="text">Choose A Catagory</label>
+        <input type="text" name="catagory" id="catagory" required>
+        <br>
+        <button class="btn">Add Expense</button>
+   
+    </form>
+    <div class="result">
+        <h2>All Expenses will be dispayed below :</h2>
+        <ol  id="listOfExpense">
+                   
+        </ol>
+        <!-- <h4 id="error"></h4> -->
+    </div>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
